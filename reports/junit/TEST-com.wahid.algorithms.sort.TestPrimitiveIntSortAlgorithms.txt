@@ -1,5 +1,0 @@
-Testsuite: com.wahid.algorithms.sort.TestPrimitiveIntSortAlgorithms
-Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.074 sec
-
-Testcase: testSelectionSort took 0.011 sec
-Testcase: testBuiltinSort took 0.001 sec

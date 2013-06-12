@@ -23,14 +23,20 @@ public class TestPrimitiveIntSortAlgorithms {
 	public void testBuiltinSort() {
 		assertFalse("BEFORE: array is sorted initially", SortTestingHelper.isSorted(array));
 		Arrays.sort(array);
-		assertTrue("AFTER: array is not sorted initially", SortTestingHelper.isSorted(array));
+		assertTrue("AFTER: array is not sorted", SortTestingHelper.isSorted(array));
 	}
 	
 	@Test
 	public void testSelectionSort() {
 		assertFalse("BEFORE: array is sorted initially", SortTestingHelper.isSorted(array));
 		SortForPrimitiveIntFactory.instance().selectionSort().sort(array);
-		assertTrue("AFTER: array is not sorted initially", SortTestingHelper.isSorted(array));
+		assertTrue("AFTER: array is not sorted", SortTestingHelper.isSorted(array));
 	}
 	
+	@Test
+	public void testBubbleSort() {
+		assertFalse("BEFORE: array is sorted initially", SortTestingHelper.isSorted(array));
+		SortForPrimitiveIntFactory.instance().bubbleSort().sort(array);
+		assertTrue("AFTER: array is not sorted", SortTestingHelper.isSorted(array));
+	}	
 }
