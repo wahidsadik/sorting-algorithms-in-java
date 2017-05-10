@@ -1,8 +1,8 @@
-*.class
+.gradle/
+target/
 
-# Package Files #
-*.jar
-*.war
-*.ear
-target
-reports
+.classpath
+.project
+.settings/
+bin/
+build/
